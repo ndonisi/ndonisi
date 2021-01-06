@@ -1,0 +1,171 @@
+.flex-grid {
+    display: flex;
+  }
+  .flex-grid .col {
+    flex: 1;
+  }
+  .flex-grid {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+  }
+  .flex-grid.col {
+    width: 20%;
+  }
+  
+  @media (max-width: 400px) {
+    .flex-grid,
+    .flex-grid {
+      display: block;
+      .col {
+        width: 100%;
+        margin: 0 0 50px 0;
+      }
+    }
+  }
+  
+  
+  {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 20px;
+  }
+  .flex-grid { 
+    margin: 0 0 20px 0;
+  }
+  .col {
+    background: red;
+    padding:20px;
+
+  }
+
+body {
+  padding: 1rem;
+  background: #457c07;
+}
+
+.grid {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;        
+}
+
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+  body {
+
+    background-image: url('https://www.ppt-backgrounds.net/thumbs/backgrounds-for-presentations-green-swirl-clipart-powerpoint-backgrounds.jpg');
+    background-size:cover;
+    background-color: black;
+    font-family: "Roboto";
+    text-align: center;
+
+    }
+
+  h1 {
+    font-family: "Modak";
+    font-size: 140px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: white;
+    font-weight:normal;
+
+  }
+
+  h2 {
+    font-family: "Modak";
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgb(255, 255, 255);
+    font-weight:normal;
+  }
+
+  h3 {
+    font-family: "Roboto";
+    font-size: 30px;
+    color: rgb(250, 213, 3);
+    font-weight:light;
+  }
+
+  p {
+    font-family: "Roboto"
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgb(245, 244, 244);
+    font-weight:normal;
+  }
+
+  .subhead {
+      padding: 20px;
+      padding-bottom: 20px;
+
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+    overflow: hidden;
+    background-color: rgb(19, 26, 19);
+    padding: 10px, 10px, 10px, 10px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(192, 247, 130);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 12pt;
+  }
+
+  header {
+      padding-top: 20px;
+      align-content: center;
+    
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
