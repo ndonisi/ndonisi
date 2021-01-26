@@ -20,7 +20,7 @@ ul {
   li a {
     display: block;
     font-family: 'VT323', monospace;
-    color: rgb(77, 75, 75);
+    color: rgb(141, 3, 175);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -73,8 +73,9 @@ ul {
 
   h1 {
     font-family: 'VT323', monospace;
-    font-size: 30pt;
+    font-size: 32pt;
     color: cyan
+    
   }
 
   body {
