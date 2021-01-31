@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #0d065c;
+    position: relative;
+  }
+  
+  p {
+    color: #fff;
+  }
+  .protagonist {
+    padding: 120px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 300px;
+    border-radius: 50%;
+    filter: hue-rotate(0deg);
+    transition: transform 2s;
+  }
+  .flip {
+    transform: scaleX(-1);
+  }
+  
+  main {
+    z-index: -1;
+  }
+  
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 500vw;
+  }
+  .wrapper section {
+    width: 100vw;
+  }
+  .vh-center {
+    margin: 120px auto;
+    width: 80%;
+    height: 80%;
+  }
+  .start {
+    height: 100vh;
+    width: 500vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .one {
+    background: #514ce6;
+  }
+  .two {
+    background: #3a37a6;
+  }
+  .three {
+    background: #2a2878;
+  }
+  .four {
+    background: #1f1d57;
+  }
+  .five {
+    background: #111030;
+  }
+  .center {
+    text-align: center;
+  }

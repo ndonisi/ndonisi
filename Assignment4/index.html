@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animation trigger</title>
+  </head>
+  <body id="pane">
+    <section class="start">
+      <img class="protagonist" src="images/pacman.gif" />
+    </section>
+    <main>
+      <div class="wrapper">
+        <section class="slide one">
+          <article class="vh-center">
+            <p class="center">First page text!</p>
+          </article>
+        </section>
+        <section class="slide two">
+          <article class="vh-center">
+            <p class="center">Second page text!</p>
+          </article>
+        </section>
+        <section class="slide three">
+          <article class="vh-center">
+            <p class="center">Third Page Text!</p>
+          </article>
+        </section>
+        <section class="slide four">
+          <article class="vh-center">
+            <p class="center">Fourth page text!</p>
+          </article>
+        </section>
+        <section class="slide five">
+          <article class="vh-center">
+            <p class="center">Fifth page text!</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script>
+      var $two = $(".two")
+
+      $two.waypoint(
+        function (direction) {
+          $(".protagonist").addClass("flip")
+        },
+        { offset: "0%", horizontal: true }
+      )
+
+      $(".three").waypoint(
+        function () {
+          $(".protagonist").css("filter", "hue-rotate(90deg)")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+      $(".four").waypoint(
+        function () {
+          $(".four").css("background", "#000000")
+        },
+        { offset: "0%", horizontal: true }
+      )
+    </script>
+  </body>
+</html>
+

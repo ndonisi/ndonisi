@@ -35,6 +35,7 @@ ul {
   }
   .flex-grid .col {
     flex: 1;
+    align-content: center;
   }
   .flex-grid {
     display: flex;
@@ -45,7 +46,7 @@ ul {
     width: 20%;
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 900px) {
     .flex-grid,
     .flex-grid {
       display: block;
