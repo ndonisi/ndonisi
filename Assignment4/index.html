@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Animation trigger</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet2" href="https://www.w3schools.com/w3css/4/w3.css">-->
+
+    <title>Assignment 4-Animation trigger</title>
   </head>
   <body id="pane">
     <section class="start">
-      <img class="protagonist" src="images/pacman.gif" />
+      <img class="pacman" src="images/pacman.gif" />
     </section>
     <main>
       <div class="wrapper">
         <section class="slide one">
           <article class="vh-center">
-            <p class="center">First page text!</p>
+            <p class="center">Let's Eat!</p>
           </article>
         </section>
         <section class="slide two">
           <article class="vh-center">
-            <p class="center">Second page text!</p>
+            <p class="center">G..G..G..G...Ghost!</p>
+            <img class="baddie" src="images/ghost1.png"/>
           </article>
         </section>
         <section class="slide three">
@@ -44,25 +49,24 @@
     <script src="js/jquery.waypoints.min.js"></script>
 
     <script>
-      var $two = $(".two")
-
-      $two.waypoint(
+      
+      $(".two").waypoint(
         function (direction) {
-          $(".protagonist").addClass("flip")
+          $(".baddie").addClass("animate-right")
         },
-        { offset: "0%", horizontal: true }
+        { offset: "30%", horizontal: true }
       )
-
+    
       $(".three").waypoint(
         function () {
-          $(".protagonist").css("filter", "hue-rotate(90deg)")
+          $(".pacman").css("filter", "hue-rotate(90deg)")
         },
         { offset: "50%", horizontal: true }
       )
 
-      $(".four").waypoint(
+      $(".five").waypoint(
         function () {
-          $(".four").css("background", "#000000")
+          $(".five").css("background", "#000000")
         },
         { offset: "0%", horizontal: true }
       )
