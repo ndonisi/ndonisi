@@ -13,6 +13,7 @@
   p {
     color: #fff;
   }
+
   .pacman {
     padding: 120px;
     z-index: 1;
@@ -23,6 +24,7 @@
     filter: hue-rotate(0deg);
     transition: transform 2s;
   }
+
   .flip {
     transform: scaleX(-1);
   }
@@ -37,20 +39,24 @@
     display: flex;
     align-items: center;
   }
+
   .wrapper {
     display: flex;
     flex-direction: row;
     height: 100vh;
     width: 500vw;
   }
+
   .wrapper section {
     width: 100vw;
   }
+
   .vh-center {
     margin: 120px auto;
     width: 80%;
     height: 80%;
   }
+
   .start {
     height: 100vh;
     width: 500vw;
@@ -59,29 +65,36 @@
     left: 0;
     right: 0;
   }
+
   .one {
     background-image: url(/ndonisi/Assignment4/images/pacmangame.png);
     background-size: 100vw 100vh;
   }
+
   .two {
     background-image: url(/ndonisi/Assignment4/images/pacmangame.png);
     background-size: 100vw 100vh;
   }
+
   .three {
     background-image: url(/ndonisi/Assignment4/images/pacmangame.png);
-    background-repeat: repeat-x;;
+    background-size: 100vw 100vh;
   }
+
   .four {
     background-image: url(/ndonisi/Assignment4/images/pacmangame.png);
-    background-repeat: repeat-x;;
+    background-size: 100vw 100vh;
   }
+
   .five {
     background-image: url(/ndonisi/Assignment4/images/pacmangame.png);
-    background-repeat: repeat-x;
+    background-size: 100vw 100vh;
   }
+
   .center {
     text-align: center;
   }
+
   .baddie {
     width: 50px;
     height: 50px;
@@ -90,10 +103,33 @@
     right: 1000px;
     opacity: 0;
   }
+ 
+  .baddie2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    right: 1000px;
+    opacity: 0;
+  }
+
+  .fruit {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    right: 1000px;
+    opacity: 0;
+  }
+
+  .mrandmrs {
+    align-content: center;
+  }
+ 
   .animate-right {
     position: relative;
     animation: animateright 2s
-}
+  }
 
 @keyframes animateright {
     from {

@@ -23,23 +23,26 @@
         </section>
         <section class="slide two">
           <article class="vh-center">
-            <p class="center">G..G..G..G...Ghost!</p>
+            <p class="center">g-g-g-Ghost!</p>
             <img class="baddie" src="images/ghost1.png"/>
           </article>
         </section>
         <section class="slide three">
           <article class="vh-center">
-            <p class="center">Third Page Text!</p>
+            <p class="center">nom nom nom!</p>
+            <img class="fruit" src="images/fruit.png"/>
           </article>
         </section>
         <section class="slide four">
           <article class="vh-center">
-            <p class="center">Fourth page text!</p>
+            <p class="center">Look out!</p>
+            <img class="baddie2" src="images/ghost2.png"/>
           </article>
         </section>
         <section class="slide five">
           <article class="vh-center">
-            <p class="center">Fifth page text!</p>
+            <p class="center">LEVEL COMPLETE!</p>
+            <img class="mrandmrs" src="images/mrandmrs.png" height="40%" width="40%" alt="mr and mrs pacman smooching"/>
           </article>
         </section>
       </div>
@@ -58,15 +61,25 @@
       )
     
       $(".three").waypoint(
-        function () {
+        function (direction) {
+          $(".fruit").addClass("animate-right")
+        },
+        { offset: "30%", horizontal: true }
+      )
+   
+      $(".four").waypoint(
+        function (direction) {
+          $(".baddie2").addClass("animate-right");
           $(".pacman").css("filter", "hue-rotate(90deg)")
         },
-        { offset: "50%", horizontal: true }
+        { offset: "30%", horizontal: true }
       )
 
       $(".five").waypoint(
         function () {
-          $(".five").css("background", "#000000")
+          $(".five").css("background", "#000000");
+          $(".pacman").css("filter", "hue-rotate(0deg)");
+          $(".mrandmrs").addClass("flip")
         },
         { offset: "0%", horizontal: true }
       )
