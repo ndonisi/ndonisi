@@ -520,3 +520,30 @@ body{
     height: 20px;
     background: red;
   }
+
+  :root
+    animation-duration: 2s;
+    animate-delay: 4s;
+
+  .lamarcus {
+    width: 100%;
+    height: 100%;
+    /*position: absolute;
+    top: 200px;
+    left: 1000px;*/
+  }
+
+  .animate-left {
+    position: relative;
+    animation: animateleft 2s
+  }
+
+@keyframes animateleft {
+    from {
+      left: -1000px;
+    } 
+    to {
+      left:0;
+    }
+}
+
