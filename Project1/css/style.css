@@ -226,7 +226,7 @@
     flex-direction: row;
   }
   
-  .box { margin: 20px; }
+  .box { margin: 0px; }
   .box1 { 
       text-align: left;
     }
@@ -239,10 +239,9 @@
   .box4 { 
       background-color: grey; 
     }
-.battle {
+h5 {
     text-align: center;
-    padding-top: 10px;
-    /*padding-bottom;*/
+    font-size:28pt;
 }
 
 #confetti {
