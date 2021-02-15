@@ -521,21 +521,46 @@ body{
     background: red;
   }
 
-  :root
-    animation-duration: 2s;
-    animate-delay: 4s;
-
   .lamarcus {
     width: 100%;
     height: 100%;
-    /*position: absolute;
-    top: 200px;
-    left: 1000px;*/
   }
 
+  .dwight {
+    width: 100%;
+    height: 100%;
+  }
+
+  .troy {
+    width: 100%;
+    height: 100%;
+  }
+
+  .wes {
+    width: 100%;
+    height: 100%;
+  }
+
+  .omar {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slideinleft {
+    position: relative;
+    animation: slideInLeft;
+    animation-duration: 3s; 
+  }
+
+  .slideinright {
+    position: relative;
+    animation: slideInRight;
+    animation-duration: 3s; 
+  }
+  
   .animate-left {
     position: relative;
-    animation: animateleft 2s
+    animation: animateleft 2s;
   }
 
 @keyframes animateleft {
