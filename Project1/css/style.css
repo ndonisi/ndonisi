@@ -188,18 +188,46 @@
       }
    
     .col1 {
-      width: 300px;
-      height: 50px;
-      border: 1px solid #000;
+      width: 45%;
+      border: 0px solid #000;
       padding: 10px;
       margin-bottom: 10px;
       float: left;
+      text-align: left;
     }
     .col2 {
-      width: 300px;
-        height: 50px;
-      border: 1px solid #000;
+      width: 45%;
+      border: 0px solid #000;
       padding: 10px;
       margin-bottom: 10px;
       float: right;
+      text-align: right;
     }
+
+.head2 {
+    text-align: center;
+}
+
+.grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .box { margin: 20px; }
+  .box1 { background-color: red; }
+  .box2 { background-color: orange; }
+  .box3 { background-color: purple; }
+  .box4 { background-color: grey; }
