@@ -105,14 +105,14 @@
     <div class="box box2"><div><img src="images/hardenprofile-04.png" width="70%" height="90%" alt="Harden"></div></div>
 </div>
 <div>
-<h5>It's sixth man time, Portland! Get Loud!</h5>
+<h5>"It's sixth man time, Portland! Get Loud!"</h5>
 </div>
 <div class="timeline">
     <ul>
       <li>
         <div class="right_content">
           <h2></h2>
-          <img src="images/lopezhoward-17.png" width="100%" height="100%" alt="Lamarcus Aldridge">
+          <img src="images/lopezhoward-17.png" class="lopez" width="100%" height="100%" alt="Lamarcus Aldridge">
           <p>Facing elimination, Houston brought the heat. The score was back and forth all game
           </p>
         </div>
@@ -123,7 +123,7 @@
       <li>
         <div class="right_content">
           <h2>Parsons hits</h2>
-          <img src="images/chandlerparsons-18.png" width="100%" height="100%" alt="Lamarcus Aldridge">
+          <img src="images/chandlerparsons-18.png" class="chandler" width="100%" height="100%" alt="Chandler Parsons">
           <p>A heartstopping shot by Chandler Parsons brings the Rockets up to 98-96...leaving the Blazers 0.9 seconds on the clock. Some fans even begin to trickle out.
           </p>
         </div>
@@ -134,7 +134,7 @@
       <li>
         <div class="right_content">
           <h2>Batum inbounds...</h2>
-          <img src="images/nicolasbatum-19.png" width="100%" height="100%" alt="Lamarcus Aldridge">
+          <img src="images/nicolasbatum-19.png" class="batum" width="100%" height="100%" alt="Nicolas Batum">
           <p>...and finds Lillard
           </p>
         </div>
@@ -163,7 +163,7 @@
   </div>
   <div class="marquee">
     <div class="track">
-      <div class="content">&nbsp; Blazers win! Blazers win! Blazers win!  Blazers win! Blazers win! Blazers win!  Blazers win! Blazers win! Blazers win!</div>
+      <div class="content">&nbsp; Blazers win! Blazers win! Blazers win!  Blazers win! Blazers win! Blazers win!  Blazers win! Blazers win! Blazers win! Blazers win! Blazers win! Blazers win!</div>
     </div>
   <script>
     $(".lamarcus").waypoint(
@@ -197,6 +197,27 @@
     $(".omar").waypoint(
         function (direction) {
           $(".omar").addClass("slideinleft")
+        },
+        { offset: "bottom-in-view", horizontal: false }
+      )
+
+      $(".lopez").waypoint(
+        function (direction) {
+          $(".lopez").addClass("slideinleft")
+        },
+        { offset: "bottom-in-view", horizontal: false }
+      )
+
+      $(".chandler").waypoint(
+        function (direction) {
+          $(".chandler").addClass("slideinright")
+        },
+        { offset: "bottom-in-view", horizontal: false }
+      )
+
+      $(".batum").waypoint(
+        function (direction) {
+          $(".batum").addClass("slideinleft")
         },
         { offset: "bottom-in-view", horizontal: false }
       )
