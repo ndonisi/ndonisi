@@ -65,15 +65,28 @@
 }
 
 .flex-container {
-  background-color:blue;
+  background-color:rgb(240, 140, 9);
   display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .flex-container > div {
-  background-color: white;
+  background-color: rgb(238, 186, 186);
   margin: 10px;
   padding: 20px;
   font-size: 30px;
 }
 
+h5 {
+  font-family: 'Oi', cursive;
+  font-size: 40pt;
+  color: purple;
+}
 
+.flex-container2 {
+  background-color:blue;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}

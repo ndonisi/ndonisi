@@ -7,12 +7,18 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oi&family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<body>	
+<body>
+  <div class="flex-container">
+    <h5>Your Order</h5>
+  </div>
   <div class="flex-container">
     <div class="flex-container">
       <ul>
+        <li><h2>Coffee Type</h2></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <li>
           <input type="radio" name="radio" id="radio1">
           <label for="radio1">Uniform</label>
@@ -44,116 +50,50 @@
     </div>
     <div class="flex-container">
       <ul>
+        <li><h2>Temp</h2></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <li>
           <input type="radio" name="radio" id="radio1">
-          <label for="radio1">Uniform</label>
+          <label for="radio1">Hot</label>
         </li>
         <li>
           <input type="radio" name="radio" id="radio2">
-          <label for="radio2">Victor</label>
+          <label for="radio2">Iced</label>
         </li>
-        <li>
-          <input type="radio" name="radio" id="radio3">
-          <label for="radio3">Whiskey</label>
-        </li>
-        <li> <input type="radio" name="radio" id="radio4">
-          <label for="radio1">Charlie</label>
-        </li>
-        <li>
-          <input type="radio" name="radio" id="radio5">
-          <label for="radio4">Xray</label>
-        </li>
-        <li>
-          <input type="radio" name="radio" id="radio6">
-          <label for="radio5">Yankee</label>
-        </li>
-        <li>
-          <input type="radio" name="radio" id="radio7">
-          <label for="radio6">Zulu</label>
-        </li>      
       </ul>
     </div>
     <div class="flex-container">
       <ul>
+        <li><h2>Modifications</h2></li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <li>
-          <input type="radio" name="radio" id="radio1">
-          <label for="radio1">Uniform</label>
+          <input type="checkbox" name="checkbox[]" id="checkbox2">
+          <label for="checkbox2">November</lable>
         </li>
         <li>
-          <input type="radio" name="radio" id="radio2">
-          <label for="radio2">Victor</label>
+          <input type="checkbox" name="checkbox[]" id="checkbox3">
+          <label for="checkbox3">Oscar</lable>
         </li>
         <li>
-          <input type="radio" name="radio" id="radio3">
-          <label for="radio3">Whiskey</label>
-        </li>
-        <li> <input type="radio" name="radio" id="radio4">
-          <label for="radio1">Charlie</label>
+          <input type="checkbox" name="checkbox[]" id="checkbox5">
+          <label for="checkbox5">Quebec</lable>
         </li>
         <li>
-          <input type="radio" name="radio" id="radio5">
-          <label for="radio4">Xray</label>
+          <input type="checkbox" name="checkbox[]" id="checkbox4">
+        <label for="checkbox4">Papa</lable>
         </li>
         <li>
-          <input type="radio" name="radio" id="radio6">
-          <label for="radio5">Yankee</label>
-        </li>
-        <li>
-          <input type="radio" name="radio" id="radio7">
-          <label for="radio6">Zulu</label>
+          <input type="checkbox" name="checkbox[]" id="checkbox6">
+        <label for="checkbox6">Romeo</lable>
         </li>      
       </ul>
     </div>
   </div>
-
-<div class="wrap">
-  				<ul class="js-errors"></ul>
-  		<form action="#" id="form" method="post">
-            <h3>Select Coffee Type</h3>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<h3>Hot or Iced</h3>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<ul>
-<li>
-<input type="radio" name="radio" id="radio1">
-<label for="radio1">Hot</label></li>
-<li>
-<input type="radio" name="radio" id="radio2">
-<label for="radio2">Iced</label></li>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    
-<h4>Modifications</h4>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<ul>	
-      <li>
-        <input type="checkbox" name="checkbox[]" id="checkbox1">
-        <label for="checkbox1"></lable>
-      </li>
-      <li>
-        <input type="checkbox" name="checkbox[]" id="checkbox2">
-        <label for="checkbox2">November</lable>
-      </li>
-      <li>
-        <input type="checkbox" name="checkbox[]" id="checkbox3">
-        <label for="checkbox3">Oscar</lable>
-      </li>
-      <li>
-        <input type="checkbox" name="checkbox[]" id="checkbox4">
-        <label for="checkbox4">Papa</lable>
-      </li>
-      <li>
-        <input type="checkbox" name="checkbox[]" id="checkbox5">
-        <label for="checkbox5">Quebec</lable>
-      </li>
-      <li>
-        <input type="checkbox" name="checkbox[]" id="checkbox6">
-        <label for="checkbox6">Romeo</lable>
-      </li>
-    </ul>
-    <input type="submit" name="Submit" value="Submit" />
-  		</form>
+  <div class="flex-container">
+    <button>submit</button>
+  </div>
+  <div class="flex-container">
+  <img class="banner" src="images/sunbeamlogo-17.png"/>
 	</div>
 </div>
 </div>
