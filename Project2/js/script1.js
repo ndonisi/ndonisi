@@ -1,35 +1,31 @@
-$(document).ready(function() {
-    $("#form").validate({
-      rules: {
-        "checkbox[]": {
-          required: true,
-          minlength: 1
-        },
-        radio: "required",
-      },
+var lFollowX = 0,
+    lFollowY = 0,
+    x = 0,
+    y = 0,
+    friction = 1 / 30;
 
-      // FIX
-      // Using highlight and unhighlight options we can add the error class to the parent ul which can then be selected and styled
-                  highlight: function(element, errorClass, validClass) {
-                        $(element).addClass(errorClass).removeClass(validClass);
-        // Keeps the default behaviour, adding error class to element but seems to break the default radio group behaviour but the below fixes that
-                        $(element).closest('ul').addClass(errorClass);
-        // add error class to ul element for checkbox groups and radio inputs
-                  },
-                  unhighlight: function(element, errorClass, validClass) {
-                        $(element).removeClass(errorClass).addClass(validClass);
-        // keeps the default behaviour removing error class from elements
-                        $(element).closest('ul').removeClass(errorClass);
-        // remove error class from ul element for checkbox groups and radio inputs
-                  },
-      // FIX END
+function moveBackground() {
+  x += (lFollowX - x) * friction;
+  y += (lFollowY - y) * friction;
+  
+  translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-      errorLabelContainer: ".js-errors",
-      errorElement: "li",
-
-      messages: {
-        "checkbox[]": "Please select at least one checkbox",
-        radio: "Please choose from the Radio Group",
-      },
-    });
+  $('img').css({
+    '-webit-transform': translate,
+    '-moz-transform': translate,
+    'transform': translate
   });
+
+  window.requestAnimationFrame(moveBackground);
+}
+
+$(window).on('mousemove click', function(e) {
+
+  var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+  var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+  lFollowX = (20 * lMouseX) / 100; 
+  lFollowY = (10 * lMouseY) / 100;
+
+});
+
+moveBackground();
