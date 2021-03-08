@@ -63,3 +63,17 @@
     border-width: 2px;
     border-color: red;
 }
+
+.flex-container {
+  background-color:blue;
+  display: flex;
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
