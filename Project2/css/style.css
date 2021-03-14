@@ -66,18 +66,18 @@ button {
 }
 
   .homepagebuttons {
-      padding-top: 40px;
+      padding-top: 20px;
   }
   .homebutton {
-    box-shadow: 5px 6px 0px 1px #fd7b01;
+  box-shadow: 5px 6px 0px 1px #fd7b01;
 	background-color:#fda92b;
-	border-radius:22px;
+	border-radius:12px;
 	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
-	color:#2e2e2e;
+	color:#002127;
 	font-family: 'PT Sans', sans-serif;
-	font-size:22px;
+	font-size:18px;
 	font-weight:bold;
 	padding:22px 31px;
 	text-decoration:none;
