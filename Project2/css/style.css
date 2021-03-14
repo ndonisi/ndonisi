@@ -33,7 +33,7 @@
   }
 
   h3 {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Sans', sans-serif;
     font-style: italic;
     font-style: bold;
     color:#2e2e2e;
@@ -71,7 +71,6 @@ button {
   justify-content: center;
   padding-top: 50px;
   font-family: 'PT Sans' , sans-serif;
-  font-weight: bold;
   font-size: 14pt;
   color:#2e2e2e;
 }
@@ -483,7 +482,7 @@ body{
 @media screen and (max-width: 480px){
 
     .bank-card__side{
-        border: 1px solid #a29e97;
+        border: 1px solid #474643;
         background-color: #f0f0ee;
         padding-left: 5%;
         padding-right: 5%;
@@ -577,7 +576,7 @@ body{
 
 .bank-card__field:focus{
 	outline: none;
-	border-color: $color3;
+	border-color: rgb(68, 67, 67);
 }
 
 .bank-card__separator{
