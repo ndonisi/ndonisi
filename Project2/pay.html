@@ -15,83 +15,52 @@
 <body>
 	<h5>Checkout</h5>
 	<div class="flex-container">
-		<p class="typingEffect">Comin' right up!</p>
-		<div class="flex-container">
-			<div class="row">
-				<div class="col-75">
-				  <div class="container">
-					<form action="/action_page.php">
-			  
-					  <div class="row">
-						<div class="col-50">
-						  <h3>Billing Address</h3>
-						  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-						  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-						  <label for="email"><i class="fa fa-envelope"></i> Email</label>
-						  <input type="text" id="email" name="email" placeholder="john@example.com">
-						  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-						  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-						  <label for="city"><i class="fa fa-institution"></i> City</label>
-						  <input type="text" id="city" name="city" placeholder="Portland">
-			  
-						  <div class="row">
-							<div class="col-50">
-							  <label for="state">State</label>
-							  <input type="text" id="state" name="state" placeholder="OR">
-							</div>
-							<div class="col-50">
-							  <label for="zip">Zip</label>
-							  <input type="text" id="zip" name="zip" placeholder="97212">
-							</div>
-						  </div>
-						</div>
-			  
-						<div class="col-50">
-						  <h3>Payment</h3>
-						  <label for="fname">Accepted Cards</label>
-						  <div class="icon-container">
-							<i class="fa fa-cc-visa" style="color:navy;"></i>
-							<i class="fa fa-cc-amex" style="color:blue;"></i>
-							<i class="fa fa-cc-mastercard" style="color:red;"></i>
-							<i class="fa fa-cc-discover" style="color:orange;"></i>
-						  </div>
-						  <label for="cname">Name on Card</label>
-						  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-						  <label for="ccnum">Credit card number</label>
-						  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-						  <label for="expmonth">Exp Month</label>
-						  <input type="text" id="expmonth" name="expmonth" placeholder="September">
-			  
-						  <div class="row">
-							<div class="col-50">
-							  <label for="expyear">Exp Year</label>
-							  <input type="text" id="expyear" name="expyear" placeholder="2018">
-							</div>
-							<div class="col-50">
-							  <label for="cvv">CVV</label>
-							  <input type="text" id="cvv" name="cvv" placeholder="352">
-							</div>
-						  </div>
-						</div>
-			</div>
-
-					  <input type="submit" value="Continue to checkout" class="btn">
-					</form>
-				  </div>
+	</div>
+	<div class="demo">
+		<form class="payment-card">
+			<div class="bank-card">
+				<div class="bank-card__side bank-card__side_front">
+					<div class="bank-card__inner">
+						<label class="bank-card__label bank-card__label_holder">
+							<span class="bank-card__hint">Cardholder's full name</span>
+							<input type="text" class="bank-card__field" placeholder="Cardholder's full name" name="holder-card">
+						</label>
+					</div>
+					<div class="bank-card__inner">
+						<label class="bank-card__label bank-card__label_number">
+							<span class="bank-card__hint">Card number</span>
+							<input type="text" class="bank-card__field" placeholder="Card number" name="number-card">
+						</label>
+					</div>
+					<div class="bank-card__inner">
+						<span class="bank-card__caption">valid thru</span>
+					</div>
+					<div class="bank-card__inner bank-card__footer">
+						<label class="bank-card__label bank-card__month">
+							<span class="bank-card__hint">Month</span>
+							<input type="text" class="bank-card__field" placeholder="MM" name="mm-card">
+						</label>
+						<span class="bank-card__separator">/</span>
+						<label class="bank-card__label bank-card__year">
+							<span class="bank-card__hint">Year</span>
+							<input type="text" class="bank-card__field" placeholder="YY" name="year-card">
+						</label>
+					</div>
 				</div>
-			  
-				<div class="col-25">
-				  <div class="container">
-					<hr>
-					<p>Total <span class="price" style="color:black"><b>$4.25</b></span></p>
-				  </div>
+				<div class="bank-card__side bank-card__side_back">
+					<div class="bank-card__inner">
+						<label class="bank-card__label bank-card__cvc">
+							<span class="bank-card__hint">CVC</span>
+							<input type="text" class="bank-card__field" id="cvc" placeholder="CVC" name="cvc-card">
+						</label>
+					</div>
 				</div>
-			  </div>
-				  
 			</div>
+			<div class="payment-card__footer">
+				<a href="https://ndonisi.github.io/Project2/index.html"></a><button class="payment-card__button">Send</button>
 			</div>
-			<img src="images/togocup-22.png" width=30% height=20%>
-
+		</form>
+	</div>
 	<script src="js/script1.js"></script>
 </body>
 </html>
