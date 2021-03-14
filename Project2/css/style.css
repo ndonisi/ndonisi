@@ -27,17 +27,40 @@
       font-color: red;
   }
 
-  h4 {
-      font-size: 22px;
-      font-color: red;
-  }
-
   h3 {
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
     font-style: bold;
     color:#2e2e2e;
   }
+
+  h4 {
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+    font-color: rgb(252, 240, 229);
+}
+
+  h5 {
+    font-family: 'Oi', cursive;
+    font-size: 40pt;
+    color: purple;
+  }
+  
+  h7 {
+    cursor: default;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Oi', cursive;
+    color: purple;
+    font-size: adjust;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  
 button {
   font-family: 'PT Serif', serif;
 }
@@ -79,12 +102,6 @@ button {
   background-color: rgb(238, 186, 186);
   margin: 10px;
   padding: 20px;
-}
-
-h5 {
-  font-family: 'Oi', cursive;
-  font-size: 40pt;
-  color: purple;
 }
 
 .flex-container2 {
@@ -271,21 +288,6 @@ img {
 .homebutton:active{
   box-shadow: none;
   top: 6px;
-}
-
-h7 {
-  cursor: default;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  font-family: 'Oi', cursive;
-  color: purple;
-  font-size: adjust;
-  width: 100%;
-  height: 100px;
-  text-align: center;
 }
 
 h7 span {
