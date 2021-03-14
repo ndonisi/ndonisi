@@ -346,11 +346,6 @@ h7 span:nth-child(10) {
   }
 }
 
-$color1: #123111;
-$color2: #c6fce5;
-$color3: #6ef3d6;
-$color4: #0dceda;
-
 
 @media screen and (min-width: 981px){
 	html{
@@ -371,15 +366,15 @@ $color4: #0dceda;
 }
 
 body{
-    background: radial-gradient($color1, rgb(255, 255, 255));
+
   	font-family: 'PT Sans', sans-serif;
 	font-size: 1.6rem;
 	margin: 0;
 }
 
 .demo{
-	min-height: 470px;
-    height: 100vh;
+	min-height: 270px;
+    height: 70vh;
     box-sizing: border-box;
     position: relative;
 
@@ -389,16 +384,6 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.footer{
-    position: absolute;
-	  left: 0;
-	  bottom: 2rem;
-
-    width: 100%;
-    font-size: 1.4rem;
-    text-align: center;
 }
 
 .melnik909{
@@ -468,11 +453,9 @@ body{
     }
 
     .bank-card__side_back:before{
-    	content: "";
-    	width: 100%;
+      width: 100%;
     	height: 25%;
-    	background-color: $color3;
-
+    	background-color: rgb(36, 36, 36);
     	position: absolute;
     	top: 14%;
     	right: 0;
@@ -558,22 +541,6 @@ body{
   margin-left: 1%;
 }
 
-.bank-card__field{
-	box-sizing: border-box;
-	border: 3px solid $color2;
-	width: 100%;
-	padding: 1rem;
-	font-family: inherit;
-	font-size: 100%;
-}
-
-.bank-card__field#cvc {
-  border: 3px solid $color3;
-  &:focus {
-    border: 3px solid $color2;
-  }
-}
-
 .bank-card__field:focus{
 	outline: none;
 	border-color: rgb(68, 67, 67);
@@ -582,7 +549,6 @@ body{
 .bank-card__separator{
 	font-size: 3.2rem;
 	color: $color2;
-
 	margin-left: 3%;
 	margin-right: 3%;
 	display: inline-block;
@@ -597,7 +563,6 @@ body{
 }
 
 @media screen and (min-width: 481px){
-
 }
 
 @media screen and (max-width: 480px){
@@ -608,17 +573,3 @@ body{
     }
 }
 
-.payment-card__button{
-
-	background-color: orangered;
-	border-radius: 4px;
-	border: 3px solid transparent;
-	cursor: pointer;
-	padding: 1rem 6.5rem;
-
-	font-size:80%;
-	font-family: inherit;
-	color: #fff;
-}
-
-}
